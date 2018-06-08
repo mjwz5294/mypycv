@@ -8,15 +8,15 @@ import numpy as np
 # print(img)
 # print(cv2.__file__)
 
-img = cv2.imread('wife.jpg')
+img = cv2.imread('imgsource/wife.jpg')
 # print(img.item(150, 120, 0))
 #
 # img.itemset((150, 120, 0), 255)
 # print(img.item(150, 120, 0))
 
-# img[:, :, 0] = 0
-# img[:, :, 1] = 0
-img[:, :, 2] = 0
+img[:, :, 0] = 0
+img[:, :, 1] = 0
+# img[:, :, 2] = 0
 
 # img[0:800, 0:800, 1] = 0
 
@@ -40,7 +40,7 @@ img[200:1000, 200:1000] = my_roi
 #     int(cameraCap1.get(cv2.CAP_PROP_FRAME_HEIGHT))
 # )
 # videoWriter = cv2.VideoWriter(
-#     'cam.m4v',
+#     'imgtarget/cam.m4v',
 #     cv2.VideoWriter_fourcc('I', '4', '2', '0'),
 #     fps,
 #     size
@@ -59,6 +59,5 @@ img[200:1000, 200:1000] = my_roi
 #     success2, frame2 = cameraCap2.read()
 
 
-
-cv2.imwrite('wife1.jpg', img)
+cv2.imwrite('imgtarget/wife1.jpg', img)
 

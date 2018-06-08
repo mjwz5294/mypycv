@@ -105,3 +105,10 @@ venv.bak/
 
 imgsource/
 Imgtarget/
+.idea/misc.xml
+.idea/modules.xml
+.idea/mypycv.iml
+.idea/other.xml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/dictionaries/mac.xml
